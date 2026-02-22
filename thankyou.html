@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <!-- Modern professional theme: Clean, minimalist with green accents for success, sans-serif fonts, light background. Variation from previous: Added subtle animation and icon for engagement. -->
+    <!-- Google Fonts: Roboto for a slightly different feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons (optional success checkmark) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <!--CSS-->
+    <style>
+        /* Global styles: Light theme, clean */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fbfc; /* Very light blue-gray */
+            color: #212529;
+            line-height: 1.6;
+        }
+
+        /* Main content: Card-style with animation */
+        main {
+            max-width: 700px;
+            margin: 60px auto;
+            padding: 30px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        main .icon {
+            font-size: 4rem;
+            color: #198754; /* Green success */
+            margin-bottom: 20px;
+        }
+
+        main h2 {
+            font-size: 2.8rem;
+            color: #198754;
+            margin-bottom: 15px;
+        }
+
+        main p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+
+        /* Button: Blue theme */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #0d6efd;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0a58ca;
+        }
+
+        /* Footer: Minimal */
+        footer {
+            background-color: #ffffff;
+            border-top: 1px solid #dee2e6;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+
+        footer a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <i class="fas fa-check-circle icon"></i>
+        <h2>Submission Received!</h2>
+        <p>Thank you for reaching out to me. I'll check and respond as soon as possible.</p>
+        <a href="/" class="btn">Return to Homepage</a>
+    </main>
+
+    <footer>
+        &copy; 2026 Naveen Kumar. All rights reserved.
+    </footer>
+</body>
+</html>
