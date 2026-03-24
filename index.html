@@ -216,13 +216,76 @@
             border-radius: 20px;
             box-shadow: 0 15px 40px rgba(0,0,0,0.1);
         }
+        /* ── Tablet (≤992px) ── */
         @media (max-width: 992px) {
             .hero h1 { font-size: 3.5rem; }
-            #typed { font-size: 1.8rem; }
+            #typed { font-size: 1.8rem; min-height: 64px; }
+            .hero .lead { font-size: 1.3rem; }
+            .section-title { font-size: 2.5rem; }
             .timeline::before { left: 30px; }
             .timeline-item { width: 100%; padding-left: 70px; padding-right: 0; }
             .timeline-item:nth-child(even) { left: 0; }
             .timeline-item::after { left: 14px; }
+            .timeline-item:nth-child(odd)::after { right: auto; left: 14px; }
+        }
+
+        /* ── Large phone (≤768px) ── */
+        @media (max-width: 768px) {
+            section { padding: 70px 0; }
+            .hero h1 { font-size: 2.8rem; }
+            #typed { font-size: 1.5rem; min-height: 56px; }
+            .hero .lead { font-size: 1.1rem; }
+            .section-title { font-size: 2.2rem; margin-bottom: 45px; }
+            .social-btn { width: 50px; height: 50px; margin: 0 8px; }
+            .social-btn i { font-size: 1.3rem !important; }
+            .contact-form { padding: 30px 20px; }
+            .skill-badge { padding: 10px 18px; font-size: 0.9rem; margin: 6px; }
+            .timeline-content { padding: 20px; }
+            .col-lg-7 .p-5,
+            .col-lg-5 .p-5 { padding: 1.5rem !important; }
+            .col-lg-7 .fs-5,
+            .col-lg-5 .fs-5 { font-size: 0.95rem !important; }
+            .project-card { margin-bottom: 0; }
+        }
+
+        /* ── Small phone (≤576px) ── */
+        @media (max-width: 576px) {
+            section { padding: 55px 0; }
+            .hero { min-height: 100svh; }
+            .hero h1 { font-size: 2.1rem; letter-spacing: -0.5px; }
+            #typed { font-size: 1.2rem; min-height: 48px; }
+            .hero .lead { font-size: 1rem; }
+            .section-title { font-size: 1.8rem; margin-bottom: 38px; }
+            .section-title::after { width: 55px; height: 4px; }
+            .social-btn { width: 44px; height: 44px; margin: 0 5px; }
+            .social-btn i { font-size: 1.1rem !important; }
+            .contact-form { padding: 24px 16px; }
+            .skill-badge { padding: 8px 14px; font-size: 0.82rem; margin: 5px; }
+            .timeline-item { padding-left: 55px; padding-right: 5px; margin-bottom: 30px; }
+            .timeline-content { padding: 16px; }
+            .timeline-content h4 { font-size: 1rem; }
+            .timeline-content p { font-size: 0.88rem; }
+            .col-lg-7 .p-5,
+            .col-lg-5 .p-5 { padding: 1.2rem !important; }
+            .col-lg-7 h3,
+            .col-lg-5 h3 { font-size: 1.1rem; }
+            .col-lg-7 .fs-5,
+            .col-lg-5 .fs-5 { font-size: 0.88rem !important; }
+            .project-icon { font-size: 3.5rem; }
+            .project-card { padding: 1.2rem !important; }
+            .project-card h5 { font-size: 1rem; }
+            #certifications .badge { font-size: 0.8rem !important; padding: 0.5rem 0.7rem !important; }
+            footer { padding: 2rem 1rem; font-size: 0.85rem; }
+            .navbar-brand { font-size: 1.1rem !important; }
+        }
+
+        /* ── Very small phones (≤400px) ── */
+        @media (max-width: 400px) {
+            .hero h1 { font-size: 1.75rem; }
+            #typed { font-size: 1rem; min-height: 42px; }
+            .hero .lead { font-size: 0.9rem; }
+            .section-title { font-size: 1.6rem; }
+            .social-btn { width: 40px; height: 40px; margin: 0 4px; }
         }
     </style>
 </head>
